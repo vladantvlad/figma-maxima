@@ -1,5 +1,13 @@
 @import './reset.css';
+@import './fonts.css';
 @import './main.css';
 @import './base.css';
 @import './header.css';
 @import './section.css' ;
+
+
+strong {
+  font-weight: 700;
+}
+
+

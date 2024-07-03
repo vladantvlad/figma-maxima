@@ -13,7 +13,7 @@ header {
 }
 
 .header__info {
-  max-width: 1100px;
+  max-width: 1200px;
   min-height: 100px;
   display: flex;
   justify-content: space-between;
@@ -189,26 +189,21 @@ header {
 
 .header_derevo {
   position: absolute;
-  margin-top: 250px;
+  margin-top: 150px;
   width: 411px;
-  height: 371px;
-  left: -145px;
+  height: 471px;
+  left: -175px;
   transform: rotate(-200deg)
 }
 
 
 .header__navigation__list {
-  position: relative;
+  max-width: 1129px;
+  min-height: 100px;
   display: flex;
-  top: 20px;
-  align-items: center;
-  max-width: 1100px;
-  min-height: 19px;
-  margin: 0 auto;
-  font-size: 16px;
-  font-weight: 500;
-  gap: 60px;
-
+  justify-content: space-between;
+  margin: 40px auto;
+  gap: 0px;
 }
 
 .header__navigation__link {
@@ -228,7 +223,7 @@ color: #FBFFFF;
   
   max-width: 1100px;
   min-height: 387px;
-  margin: 0 auto;
+  margin-left:  40px;
 }
 .header-inner__tittle {
   width: 429px;
