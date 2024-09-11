@@ -1,845 +1,2280 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Document</title>
-</head>
-<body>
-  <main class="main">
-      <header class="header">
-        
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Figma</title>
+  </head>
 
-        <div class="header__info">
-          <div class="header__info__tittle">
-              <img class="header__info__tittle-label" src="./images/icon/roof.svg" alt="">
-
-              <div>
-                  <p class="header__info_title__naming">HOUSE WORLD</p>
-                  <p  class="header__info__title__nam">Дома и бани от новгородских мастеров</p>
+  <body>
+    <main class="main">
+      <div class="container">
+        <header class="header">
+          <div class="header__info advertisement">
+            <div class="advertisement__inner advertisement-title">
+              <img
+                src="./images/main/house_world_logo.png"
+                alt="house_world_logo"
+                class="advertisement__inner-logo"
+              />
+              <div class="advertisement__inner-title">
+                <img
+                  src="./images/main/house_world.png"
+                  alt="house_world"
+                  class="advertisement__inner-logo-text"
+                />
+                <span class="advertisement__inner-logo-description"
+                  >Дома и бани от новгородских<br />
+                  мастеров</span
+                >
               </div>
             </div>
-            
-            <div class="header__info__rating">
-              <div>
-                <img src="./images/icon/checkbox.svg" alt="">
-                <p class="header__info__rating-stat">4,9</p>
+            <div class="advertisement__inner rating">
+              <div class="rating__flag">
+                <span class="rating__value">4,9</span>
               </div>
-
-              <div class="header__info__rating-grade">
-                <div class="header__info__rating-stars">
-                  <img src="./images/icon/star.svg" alt="">
-                  <img src="./images/icon/star.svg" alt="">
-                  <img src="./images/icon/star.svg" alt="">
-                  <img src="./images/icon/star.svg" alt="">
-              </div>
-                <p class="header__info__rating-txt">
-                рейтинг в Google
-                <span>на основании 180 отзывов</span>
-                </p>
+              <div class="rating__info">
+                <ul class="rating__stars-list stars">
+                  <li class="stars__elem">
+                    <img
+                      src="./images/main/star.png"
+                      alt="star"
+                      class="rating__star"
+                    />
+                  </li>
+                  <li class="stars__elem">
+                    <img
+                      src="./images/main/star.png"
+                      alt="star"
+                      class="rating__star"
+                    />
+                  </li>
+                  <li class="stars__elem">
+                    <img
+                      src="./images/main/star.png"
+                      alt="star"
+                      class="rating__star"
+                    />
+                  </li>
+                  <li class="stars__elem">
+                    <img
+                      src="./images/main/star.png"
+                      alt="star"
+                      class="rating__star"
+                    />
+                  </li>
+                </ul>
+                <span class="rating__info-text google-rating"
+                  ><span class="google-rating__mark">Рейтинг в Google </span
+                  >на<br />
+                  основании 180 отзывов</span
+                >
               </div>
             </div>
-
-            <div class="header__info__calculator">
-              <button class="header__info__calculator__button">
-                Прислать проект на расчет
-                <img src="./images/icon/clc.svg" alt="">
+            <div class="advertisement__inner advertisement-calculation">
+              <button class="advertisement__inner-button calculation-button">
+                <span class="calculation-button__text"
+                  >Прислать проект на расчет</span
+                ><img
+                  src="./images/main/calculator.png"
+                  alt="calculator"
+                  class="calculation-button__icon"
+                />
               </button>
-              
-              <div  class="header__info__calculator__mail">
-                  <img class="header__info_calculator__mail__img" src="./images/icon/mail.svg" alt="">
-                  <a class="header__info__calc__email-address">info@house.world</a>
+              <div class="advertisement__inner-email">
+                <img
+                  src="./images/main/letter.png"
+                  alt="letter"
+                  class="advertisement__inner-letter"
+                />
+                <a href="./#" class="advertisement__inner-email-text"
+                  >info@house.world</a
+                >
               </div>
             </div>
-
-            <div class="header__info__massanger">
-              <a  class="header__info__massanger-text" href="#">
-                  <img src="./images/icon/dot.svg" alt="ellipse">
-                  Мы онлайн
-              </a>
-              <img class="header__info__chat-img" src="/images/icon/massenge.svg" alt="">
+            <div class="advertisement__inner advertisement-online">
+              <div class="advertisement__inner-online">
+                <img
+                  src="./images/main/green_point.png"
+                  alt="green_point"
+                  class="advertisement__inner-point"
+                /><span class="advertisement__inner-online-text"
+                  >Мы онлайн</span
+                >
+              </div>
+              <img
+                src="./images/main/phone.png"
+                alt="phone"
+                class="advertisement__inner-phone-img"
+              />
             </div>
+            <div class="advertisement__inner advertisement-contacts">
+              <div class="advertisement__inner-shedule">
+                <img
+                  src="./images/main/green_point.png"
+                  alt="green_point"
+                  class="advertisement__inner-point"
+                /><span class="advertisement__inner-shedule-text"
+                  >Без выходных с 10:00 до 20:00</span
+                >
+              </div>
+              <span class="advertisement__inner-phone-number"
+                >+7 (800) 000-00-00</span
+              ><a href="./#" class="advertisement__inner-ordering"
+                >Заказать обратный звонок</a
+              >
+            </div>
+          </div>
+          <nav class="header__navigation">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-elem">
+                <a href="./#" class="header__navigation-link"
+                  >проекты<img
+                    src="./images/main/down_arrow.png"
+                    alt="down_arrow"
+                    class="header__navigation-arrow"
+                /></a>
+              </li>
+              <li class="header__navigation-elem">
+                <a
+                  href="./#"
+                  class="header__navigation-link navigation-mark-link"
+                  >фото работ</a
+                >
+              </li>
+              <li class="header__navigation-elem">
+                <a href="./#" class="header__navigation-link">акции</a>
+              </li>
+              <li class="header__navigation-elem">
+                <a href="./#" class="header__navigation-link"
+                  >услуги<img
+                    src="./images/main/down_arrow.png"
+                    alt="down_arrow"
+                    class="header__navigation-arrow"
+                /></a>
+              </li>
+              <li class="header__navigation-elem">
+                <a href="./#" class="header__navigation-link"
+                  >заказчику<img
+                    src="./images/main/down_arrow.png"
+                    alt="down_arrow"
+                    class="header__navigation-arrow"
+                /></a>
+              </li>
+              <li class="header__navigation-elem">
+                <a href="./#" class="header__navigation-link">контакты</a>
+              </li>
+              <li class="header__navigation-elem">
+                <a href="./#" class="header__navigation-link"
+                  ><img
+                    src="./images/main/favourite.png"
+                    alt="favourite"
+                    class="header__navigation-favourite"
+                  />избранное</a
+                >
+              </li>
+              <li class="header__navigation-elem">
+                <a href="./#" class="header__navigation-link"
+                  ><img
+                    src="./images/main/search.png"
+                    alt="search"
+                    class="header__navigation-search"
+                  />поиск</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="header__burger">
+            <button class="header__burger-button burger-button">Burger</button>
+          </div>
+        </header>
 
-            <div class="header__info__phone">
-              <p class="header__info__phone-txt">
-                <img src="." alt="">
-                Без выходных с 10:00 до 20:00
+        <div class="main-inner">
+          <h1 class="main-inner__title title">
+            <span class="title__mark">Строительство деревянных домов</span>
+            под ключ в Курске
+          </h1>
+          <p class="main-inner__description">
+            Построим теплый и надежный дом
+            <span class="main-inner__description-mark">с гарантией 10 лет</span>
+          </p>
+          <button class="main-inner__button">рассчитать стоимость</button>
+          <ul class="main-inner__advantages advantages">
+            <li class="advantages__inner advantages__inner_width-92">
+              <img
+                src="./images/main/down_list_element_1.png"
+                alt="down_list_element_1"
+                class="advantages__inner-icon"
+              />
+              <p class="advantages__inner-description">
+                40 собственных опытных бригад
               </p>
-                <p class="header__info__phone__number">+7 (800) 000-00-00</p>
-                <a class="header__info__phone-feedback" href="">Заказать обратный звонок</a>
-            </div>
-            <img src="./images/Derevo-bez-fona.png" alt="derevo" class="header_derevo">
+            </li>
+            <li class="advantages__inner advantages__inner_width-151">
+              <img
+                src="./images/main/down_list_element_2.png"
+                alt="down_list_element_2"
+                class="advantages__inner-icon"
+              />
+              <p class="advantages__inner-description">
+                Свое производство строительных материалов
+              </p>
+            </li>
+            <li class="advantages__inner advantages__inner_width-117">
+              <img
+                src="./images/main/down_list_element_3.png"
+                alt="down_list_element_3"
+                class="advantages__inner-icon"
+              />
+              <p class="advantages__inner-description">
+                Тысячи довольных клиентов с 1998 года
+              </p>
+            </li>
+            <li class="advantages__inner advantages__inner_width-175">
+              <img
+                src="./images/main/down_list_element_4.png"
+                alt="down_list_element_4"
+                class="advantages__inner-icon"
+              />
+              <p class="advantages__inner-description">
+                Гарантия на все строительные работы по договору
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <img
+          class="main__right-tree"
+          src="./images/main/right_tree.png"
+          alt="right-tree"
+        />
+        <img
+          class="main__left-tree"
+          src="./images/main/left_tree.png"
+          alt="left-tree"
+        />
       </div>
+    </main>
 
-
-        <div class="header__navigation">
-        <nav>
-          <ul class="header__navigation__list">
-            <li>
-              <a class="header__navigation__link" href="">
-                ПРОЕКТЫ
-              </a>
-            </li>
-
-            <li>
-              <a class="header__navigation__link" href="">
-                ФОТО РАБОТ
-              </a>
-            </li>
-
-            <li>
-              <a class="header__navigation__link" href="">
-                АКЦИИ
-              </a>
-            </li>
-
-            <li>
-              <a class="header__navigation__link" href="">
-                УСЛУГИ
-              </a>
-            </li>
-
-            <li>
-              <a class="header__navigation__link" href="">
-                ЗАКАЗЧИКУ
-              </a>
-            </li>
-
-            <li>
-              <a class="header__navigation__link" href="">
-                КОНТАКТЫ
-              </a>
-            </li>
-
-            <li>
-              <a class="header__navigation__link" href="">
-                <img src="./images/icon/heart.svg" alt="">
-                ИЗБРАННОЕ
-              </a>
-            </li>
-
-            <li>
-              <div class="header__search">
-                <img src="./images/icon/search.svg" alt="">
-                ПОИСК
+    <section class="section-calculation section_bg">
+      <div class="container calculation__wrapper">
+        <div class="calculation__inner">
+          <h2 class="section-calculation__title title">
+            <span class="title__mark"
+              >Рассчитайте предварительную<br />
+              стоимость</span
+            >
+            дома за 1 минуту
+          </h2>
+          <div class="calculation__inner-progress">
+            <img
+              src="./images/type_building/green_progress_bar.png"
+              alt="green_progress_bar"
+              class="calculation__inner-status"
+            />
+          </div>
+          <h3 class="calculation__inner-subtitle subtitle">
+            <span class="subtitle__mark">01. </span>Что будем строить?
+          </h3>
+          <div class="calculation__inner-images">
+            <figure class="calculation__inner-figure">
+              <div class="calculation__inner-card-image">
+                <img
+                  src="./images/type_building/house.png"
+                  alt="house"
+                  class="calculation__inner-house"
+                />
+                <img
+                  src="./images/type_building/enabled_mark.png"
+                  alt="enabled_mark"
+                  class="house-tick"
+                />
               </div>
+
+              <figcaption class="calculation__inner-figcaption">Дом</figcaption>
+            </figure>
+            <figure class="calculation__inner-figure">
+              <div class="calculation__inner-card-image">
+                <img
+                  src="./images/type_building/bathhouse.png"
+                  alt="bathhouse"
+                  class="calculation__inner-bathhouse"
+                />
+                <img
+                  src="./images/type_building/disabled_mark.png"
+                  alt="disabled_mark"
+                  class="bathhouse-tick"
+                />
+              </div>
+              <figcaption class="calculation__inner-figcaption">
+                Баня
+              </figcaption>
+            </figure>
+          </div>
+          <div class="calculation__inner-footer">
+            <div class="calculation__inner-tip tip">
+              <div class="tip__images">
+                <img
+                  src="./images/type_building/pointer.png"
+                  alt="pointer"
+                  class="tip__pointer"
+                />
+                <img
+                  src="./images/type_building/orange_point.png"
+                  alt="orange_point"
+                  class="tip__point"
+                />
+              </div>
+              <span class="tip__text"
+                ><span class="tip__text-mark"
+                  >Нажимайте на вариант ответа<br
+                /></span>
+                и переходите к следующему вопросу
+              </span>
+            </div>
+            <button class="calculation__inner-button button">
+              <span class="button__text">Далее</span>
+              <div class="button__arrows">
+                <img
+                  src="./images/type_building/right_arrow_1.png"
+                  alt="right_arrow_1"
+                  class="button__arrow"
+                /><img
+                  src="./images/type_building/right_arrow_2.png"
+                  alt="right_arrow_2"
+                  class="button__arrow"
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="calculation__architect">
+          <figure class="calculation__architect-figure">
+            <img
+              src="./images/type_building/bookmark.png"
+              alt="bookmark"
+              class="calculation__architect-bookmark"
+            />
+            <img
+              src="./images/type_building/person.png"
+              alt="person"
+              class="calculation__architect-person"
+            />
+            <figcaption class="calculation__architect-figcaption">
+              <h3 class="calculation__architect-name">Михаил Иванов</h3>
+              <p class="calculation__architect-post">Ведущий архитектор</p>
+            </figcaption>
+          </figure>
+          <p class="calculation__architect-subtitle subtitle">
+            Ответив на вопросы
+            <span class="subtitle__mark">вы получите:</span>
+          </p>
+          <ul class="calculation__architect-advantages architect-advantages">
+            <li class="architect-advantages__elem-discount">
+              <img
+                src="./images/type_building/open_lock.png"
+                alt="open_lock"
+                class="calculation__architect-lock"
+              /><span
+                class="architect-advantages__text architect-advantages_color_black"
+                >Гарантированную<br />
+                <span class="architect-advantages__text-mark"
+                  >скидку</span
+                ></span
+              >
+              <span class="architect-advantages__text-number"
+                >1<sup class="architect-advantages__text-percent">%</sup></span
+              >
+            </li>
+            <li class="architect-advantages__elem-price">
+              <img
+                src="./images/type_building/close_lock.png"
+                alt="close_lock"
+                class="calculation__architect-lock"
+              /><span class="architect-advantages__text"
+                ><span class="architect-advantages__text-mark"
+                  >Ориентировочную<br
+                /></span>
+                стоимость строительства</span
+              >
+            </li>
+            <li class="architect-advantages__elem-selection">
+              <img
+                src="./images/type_building/close_lock.png"
+                alt="close_lock"
+                class="calculation__architect-lock"
+              /><span class="architect-advantages__text"
+                ><span class="architect-advantages__text-mark"
+                  >Точную подборку<br
+                /></span>
+                проектов исходя из ваших<br />
+                ответов</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-house section_bg">
+      <div class="container house__wrapper">
+        <h2 class="section-house__title title">
+          <span class="title__mark">Мы строим деревянные дома и бани</span>
+          с учетом<br />
+          всех особенностей Курска
+        </h2>
+        <div class="house__inner">
+          <div class="house__inner-col-1-row-1 house-big-card">
+            <div class="house-card__header card-header">
+              <h3 class="card-header__title">
+                Каркасные<br />
+                дома
+              </h3>
+              <button class="card-header__button">100+ проектов</button>
+            </div>
+            <div class="house-card__col-footer card-footer">
+              <p class="card-footer__text">
+                от
+                <span class="card-footer__price">21 800 </span>руб/м
+              </p>
+              <button class="card-col-footer__button">смотреть проекты</button>
+            </div>
+          </div>
+          <div class="house__inner-col-1-row-2 house-small-card">
+            <div class="house-card__header card-header">
+              <h3 class="card-header__title card-header__title_small">
+                Перевозные<br />
+                бани
+              </h3>
+              <button class="card-header__button">100+ проектов</button>
+            </div>
+            <div class="house-card__row-footer card-footer">
+              <p class="card-footer__text">
+                от
+                <span class="card-footer__price card-footer__price_small"
+                  >19 700 </span
+                >руб/м
+              </p>
+              <button class="card-row-footer__button">смотреть проекты</button>
+            </div>
+          </div>
+
+          <div class="house__inner-col-2-row-1 house-small-card">
+            <div class="house-card__header card-header">
+              <h3 class="card-header__title card-header__title_small">
+                Дома<br />
+                из бруса
+              </h3>
+              <button class="card-header__button">100+ проектов</button>
+            </div>
+            <div class="house-card__row-footer card-footer">
+              <p class="card-footer__text">
+                от
+                <span class="card-footer__price card-footer__price_small"
+                  >19 700 </span
+                >руб/м
+              </p>
+              <button class="card-row-footer__button">смотреть проекты</button>
+            </div>
+          </div>
+          <div class="house__inner-col-2-row-2 house-small-card">
+            <div class="house-card__header card-header">
+              <h3 class="card-header__title card-header__title_small">
+                Бани<br />
+                из бруса
+              </h3>
+              <button class="card-header__button">100+ проектов</button>
+            </div>
+            <div class="house-card__row-footer card-footer">
+              <p class="card-footer__text">
+                от
+                <span class="card-footer__price card-footer__price_small"
+                  >19 700 </span
+                >руб/м
+              </p>
+              <button class="card-row-footer__button">смотреть проекты</button>
+            </div>
+          </div>
+          <div class="house__inner-col-2-row-3 house-small-card">
+            <div class="house-card__header card-header">
+              <h3 class="card-header__title card-header__title_small">
+                Срубы под<br />
+                усадку
+              </h3>
+
+              <button class="card-header__button">100+ проектов</button>
+            </div>
+            <div class="house-card__row-footer card-footer">
+              <p class="card-footer__text">
+                от
+                <span class="card-footer__price card-footer__price_small"
+                  >19 700 </span
+                >руб/м
+              </p>
+              <button class="card-row-footer__button">смотреть проекты</button>
+            </div>
+          </div>
+
+          <div class="house__inner-col-3-row-1 house-small-card">
+            <div class="house-card__header card-header">
+              <h3 class="card-header__title card-header__title_small">
+                Срубы под<br />
+                усадку
+              </h3>
+              <button class="card-header__button">100+ проектов</button>
+            </div>
+            <div class="house-card__row-footer card-footer">
+              <p class="card-footer__text">
+                от
+                <span class="card-footer__price card-footer__price_small"
+                  >19 700 </span
+                >руб/м
+              </p>
+              <button class="card-row-footer__button">смотреть проекты</button>
+            </div>
+          </div>
+          <div class="house__inner-col-3-row-2 house-big-card">
+            <div class="house-card__header card-header">
+              <h3 class="card-header__title">
+                Каркасные<br />
+                бани
+              </h3>
+              <button class="card-header__button">100+ проектов</button>
+            </div>
+            <div class="house-card__col-footer card-footer">
+              <p class="card-footer__text">
+                от
+                <span class="card-footer__price">20 800 </span>руб/м
+              </p>
+              <button class="card-col-footer__button">смотреть проекты</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-project section_bg">
+      <div class="container project__wrapper">
+        <h2 class="section-project__title title">
+          Посмотрите популярные проекты домов
+        </h2>
+        <div class="section-project__navigation project-navigation">
+          <a href="./#" class="project-navigation__link"
+            ><img
+              src="./images/project/left_arrow.png"
+              alt="left_arrow"
+              class="project-navigation__left-arrow"
+          /></a>
+          <ul class="project-navigation__list">
+            <li class="project-navigation__elem">
+              <a href="./#" class="project-navigation__link">Одноэтажный</a>
+            </li>
+            <li
+              class="project-navigation__elem project-navigation__elem_background-color-green"
+            >
+              <a
+                href="./#"
+                class="project-navigation__link project-navigation__link_color-white"
+                >С мансардой</a
+              >
+            </li>
+            <li class="project-navigation__elem">
+              <a href="./#" class="project-navigation__link">Двухэтажный</a>
+            </li>
+            <li class="project-navigation__elem">
+              <a href="./#" class="project-navigation__link"
+                >С цокольным этажом</a
+              >
+            </li>
+            <li class="project-navigation__elem">
+              <a href="./#" class="project-navigation__link">Трехэтажные</a>
+            </li>
+            <li class="project-navigation__elem">
+              <a href="./#" class="project-navigation__link"
+                >С панорамными окнами</a
+              >
+            </li>
+            <li class="project-navigation__elem">
+              <a href="./#" class="project-navigation__link">С гаражом</a>
+            </li>
+          </ul>
+          <a href="./#" class="project-navigation__link"
+            ><img
+              src="./images/project/right_arrow.png"
+              alt="right_arrow"
+              class="project-navigation__right-arrow"
+          /></a>
+
+          <a href="./#" class="project-navigation__more">Смотреть все</a>
+        </div>
+        <div class="project__inner">
+          <div class="project__inner-card project-card">
+            <figure class="project-card__figure">
+              <img
+                src="./images/project/ataman.png"
+                alt="ataman"
+                class="project-card__img"
+              />
+              <figcaption class="project-card__figcaption">
+                <h3 class="project-card__title">&quot;Атаман&quot;</h3>
+                <ul class="project-card__list">
+                  <li class="project-card__elem">
+                    Площадь:
+                    <span class="project-card__elem-mark">108 м</span>
+                  </li>
+                  <li class="project-card__elem">
+                    Размеры:
+                    <span class="project-card__elem-mark">7х9</span>
+                  </li>
+
+                  <li class="project-card__elem">
+                    Срок стройки:
+                    <span class="project-card__elem-mark">16 дней</span>
+                  </li>
+
+                  <li class="project-card__elem">
+                    Комнат:
+                    <span class="project-card__elem-mark">5</span>
+                  </li>
+                </ul>
+                <div class="project-card__house-type house-type">
+                  <div class="house-type__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    <span class="house-type__text"> Тип дома:</span>
+                  </div>
+
+                  <div class="house-type__text-mark">Каркасный</div>
+                </div>
+                <div class="project-card__house-price house-price">
+                  <div class="house-price__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    Стоимость:
+                  </div>
+                  <span class="house-price__text"
+                    >от
+                    <span class="house-price__value">1 780 000 </span>руб</span
+                  >
+                </div>
+                <div class="project-card__footer">
+                  <button class="project-card__button">
+                    смотреть проекты
+                    <img
+                      src="./images/project/button_arrow.png"
+                      alt="button_arrow"
+                      class="project-card__button-arrow"
+                    />
+                  </button>
+                  <img
+                    src="./images/project/green_mark.png"
+                    alt="green_mark"
+                    class="project-card__tick"
+                  />
+                  <span class="project-card__advantage"
+                    >Индивидуальная<br />
+                    планировка дома</span
+                  >
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project__inner-card project-card">
+            <figure class="project-card__figure">
+              <img
+                src="./images/project/ataman.png"
+                alt="ataman"
+                class="project-card__img"
+              />
+              <figcaption class="project-card__figcaption">
+                <h3 class="project-card__title">&quot;Атаман&quot;</h3>
+                <ul class="project-card__list">
+                  <li class="project-card__elem">
+                    Площадь:
+                    <span class="project-card__elem-mark">108 м</span>
+                  </li>
+                  <li class="project-card__elem">
+                    Размеры:
+                    <span class="project-card__elem-mark">7х9</span>
+                  </li>
+
+                  <li class="project-card__elem">
+                    Срок стройки:
+                    <span class="project-card__elem-mark">16 дней</span>
+                  </li>
+
+                  <li class="project-card__elem">
+                    Комнат:
+                    <span class="project-card__elem-mark">5</span>
+                  </li>
+                </ul>
+                <div class="project-card__house-type house-type">
+                  <div class="house-type__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    <span class="house-type__text"> Тип дома:</span>
+                  </div>
+
+                  <div class="house-type__text-mark">Каркасный</div>
+                </div>
+                <div class="project-card__house-price house-price">
+                  <div class="house-price__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    Стоимость:
+                  </div>
+                  <span class="house-price__text"
+                    >от
+                    <span class="house-price__value">1 780 000 </span>руб</span
+                  >
+                </div>
+                <div class="project-card__footer">
+                  <button class="project-card__button">
+                    смотреть проекты
+                    <img
+                      src="./images/project/button_arrow.png"
+                      alt="button_arrow"
+                      class="project-card__button-arrow"
+                    />
+                  </button>
+                  <img
+                    src="./images/project/green_mark.png"
+                    alt="green_mark"
+                    class="project-card__tick"
+                  />
+                  <span class="project-card__advantage"
+                    >Индивидуальная<br />
+                    планировка дома</span
+                  >
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project__inner-card project-card">
+            <figure class="project-card__figure">
+              <img
+                src="./images/project/ataman.png"
+                alt="ataman"
+                class="project-card__img"
+              />
+              <figcaption class="project-card__figcaption">
+                <h3 class="project-card__title">&quot;Атаман&quot;</h3>
+                <ul class="project-card__list">
+                  <li class="project-card__elem">
+                    Площадь:
+                    <span class="project-card__elem-mark">108 м</span>
+                  </li>
+                  <li class="project-card__elem">
+                    Размеры:
+                    <span class="project-card__elem-mark">7х9</span>
+                  </li>
+
+                  <li class="project-card__elem">
+                    Срок стройки:
+                    <span class="project-card__elem-mark">16 дней</span>
+                  </li>
+
+                  <li class="project-card__elem">
+                    Комнат:
+                    <span class="project-card__elem-mark">5</span>
+                  </li>
+                </ul>
+                <div class="project-card__house-type house-type">
+                  <div class="house-type__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    <span class="house-type__text"> Тип дома:</span>
+                  </div>
+
+                  <div class="house-type__text-mark">Каркасный</div>
+                </div>
+                <div class="project-card__house-price house-price">
+                  <div class="house-price__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    Стоимость:
+                  </div>
+                  <span class="house-price__text"
+                    >от
+                    <span class="house-price__value">1 780 000 </span>руб</span
+                  >
+                </div>
+                <div class="project-card__footer">
+                  <button class="project-card__button">
+                    смотреть проекты
+                    <img
+                      src="./images/project/button_arrow.png"
+                      alt="button_arrow"
+                      class="project-card__button-arrow"
+                    />
+                  </button>
+                  <img
+                    src="./images/project/green_mark.png"
+                    alt="green_mark"
+                    class="project-card__tick"
+                  />
+                  <span class="project-card__advantage"
+                    >Индивидуальная<br />
+                    планировка дома</span
+                  >
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project__inner-card project-card">
+            <figure class="project-card__figure">
+              <img
+                src="./images/project/ataman.png"
+                alt="ataman"
+                class="project-card__img"
+              />
+              <figcaption class="project-card__figcaption">
+                <h3 class="project-card__title">&quot;Атаман&quot;</h3>
+                <ul class="project-card__list">
+                  <li class="project-card__elem">
+                    Площадь:
+                    <span class="project-card__elem-mark">108 м</span>
+                  </li>
+                  <li class="project-card__elem">
+                    Размеры:
+                    <span class="project-card__elem-mark">7х9</span>
+                  </li>
+                  <li class="project-card__elem">
+                    Срок стройки:
+                    <span class="project-card__elem-mark">16 дней</span>
+                  </li>
+
+                  <li class="project-card__elem">
+                    Комнат:
+                    <span class="project-card__elem-mark">5</span>
+                  </li>
+                </ul>
+                <div class="project-card__house-type house-type">
+                  <div class="house-type__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    <span class="house-type__text"> Тип дома:</span>
+                  </div>
+
+                  <div class="house-type__text-mark">Каркасный</div>
+                </div>
+                <div class="project-card__house-price house-price">
+                  <div class="house-price__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    Стоимость:
+                  </div>
+                  <span class="house-price__text"
+                    >от
+                    <span class="house-price__value">1 780 000 </span>руб</span
+                  >
+                </div>
+                <div class="project-card__footer">
+                  <button class="project-card__button">
+                    смотреть проекты
+                    <img
+                      src="./images/project/button_arrow.png"
+                      alt="button_arrow"
+                      class="project-card__button-arrow"
+                    />
+                  </button>
+                  <img
+                    src="./images/project/green_mark.png"
+                    alt="green_mark"
+                    class="project-card__tick"
+                  />
+                  <span class="project-card__advantage"
+                    >Индивидуальная<br />
+                    планировка дома</span
+                  >
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project__inner-card project-card">
+            <figure class="project-card__figure">
+              <img
+                src="./images/project/ataman.png"
+                alt="ataman"
+                class="project-card__img"
+              />
+              <figcaption class="project-card__figcaption">
+                <h3 class="project-card__title">&quot;Атаман&quot;</h3>
+                <ul class="project-card__list">
+                  <li class="project-card__elem">
+                    Площадь:
+                    <span class="project-card__elem-mark">108 м</span>
+                  </li>
+                  <li class="project-card__elem">
+                    Размеры:
+                    <span class="project-card__elem-mark">7х9</span>
+                  </li>
+
+                  <li class="project-card__elem">
+                    Срок стройки:
+                    <span class="project-card__elem-mark">16 дней</span>
+                  </li>
+
+                  <li class="project-card__elem">
+                    Комнат:
+                    <span class="project-card__elem-mark">5</span>
+                  </li>
+                </ul>
+                <div class="project-card__house-type house-type">
+                  <div class="house-type__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    <span class="house-type__text"> Тип дома:</span>
+                  </div>
+
+                  <div class="house-type__text-mark">Каркасный</div>
+                </div>
+                <div class="project-card__house-price house-price">
+                  <div class="house-price__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    Стоимость:
+                  </div>
+                  <span class="house-price__text"
+                    >от
+                    <span class="house-price__value">1 780 000 </span>руб</span
+                  >
+                </div>
+                <div class="project-card__footer">
+                  <button class="project-card__button">
+                    смотреть проекты
+                    <img
+                      src="./images/project/button_arrow.png"
+                      alt="button_arrow"
+                      class="project-card__button-arrow"
+                    />
+                  </button>
+                  <img
+                    src="./images/project/green_mark.png"
+                    alt="green_mark"
+                    class="project-card__tick"
+                  />
+                  <span class="project-card__advantage"
+                    >Индивидуальная<br />
+                    планировка дома</span
+                  >
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project__inner-card project-card">
+            <figure class="project-card__figure">
+              <img
+                src="./images/project/ataman.png"
+                alt="ataman"
+                class="project-card__img"
+              />
+              <figcaption class="project-card__figcaption">
+                <h3 class="project-card__title">&quot;Атаман&quot;</h3>
+                <ul class="project-card__list">
+                  <li class="project-card__elem">
+                    Площадь:
+                    <span class="project-card__elem-mark">108 м</span>
+                  </li>
+                  <li class="project-card__elem">
+                    Размеры:
+                    <span class="project-card__elem-mark">7х9</span>
+                  </li>
+
+                  <li class="project-card__elem">
+                    Срок стройки:
+                    <span class="project-card__elem-mark">16 дней</span>
+                  </li>
+
+                  <li class="project-card__elem">
+                    Комнат:
+                    <span class="project-card__elem-mark">5</span>
+                  </li>
+                </ul>
+                <div class="project-card__house-type house-type">
+                  <div class="house-type__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    <span class="house-type__text"> Тип дома:</span>
+                  </div>
+
+                  <div class="house-type__text-mark">Каркасный</div>
+                </div>
+                <div class="project-card__house-price house-price">
+                  <div class="house-price__description">
+                    <img
+                      src="./images/project/green_point.png"
+                      alt="green_point"
+                      class="project-card__point"
+                    />
+                    Стоимость:
+                  </div>
+                  <span class="house-price__text"
+                    >от
+                    <span class="house-price__value">1 780 000 </span>руб</span
+                  >
+                </div>
+                <div class="project-card__footer">
+                  <button class="project-card__button">
+                    смотреть проекты
+                    <img
+                      src="./images/project/button_arrow.png"
+                      alt="button_arrow"
+                      class="project-card__button-arrow"
+                    />
+                  </button>
+                  <img
+                    src="./images/project/green_mark.png"
+                    alt="green_mark"
+                    class="project-card__tick"
+                  />
+                  <span class="project-card__advantage"
+                    >Индивидуальная<br />
+                    планировка дома</span
+                  >
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-stage section_bg">
+      <div class="container stage__wrapper">
+        <h2 class="section-stage__title title">
+          Ваш <span class="title__mark">идеальный дом</span> всего за 6 этапов
+        </h2>
+        <nav class="section-stage__navigation stage-navigation">
+          <ul class="stage-navigation__list">
+            <li class="stage-navigation__elem stage-navigation__elem_selected">
+              Этап 1
+            </li>
+            <li class="stage-navigation__elem">Этап 2</li>
+            <li class="stage-navigation__elem">Этап 3</li>
+            <li class="stage-navigation__elem">Этап 4</li>
+            <li class="stage-navigation__elem">Этап 5</li>
+            <li class="stage-navigation__elem">Этап 6</li>
+          </ul>
+        </nav>
+        <div class="stage__inner">
+          <img
+            src="./images/house/house.png"
+            alt="house"
+            class="stage__inner-image"
+          />
+
+          <div class="stage__inner-card stage-card">
+            <div class="stage-card__time">
+              <img
+                src="./images/house/timer.png"
+                alt="timer"
+                class="stage-card__timer"
+              /><span class="stage-card__time-text"
+                >Время:
+                <span class="stage-card__time-text-mark">1 день</span></span
+              >
+            </div>
+
+            <h3 class="stage-card__title">
+              Согласование проекта<br />
+              коттеджа
+            </h3>
+            <div class="stage-card__description card-description">
+              <div class="card-description__text">
+                <ul class="card-description__list">
+                  <li class="card-description__list-elem">
+                    <img
+                      src="./images/house/green_mark.png"
+                      alt="green_mark"
+                      class="card-description__tick"
+                    /><span class="card-description__list-text list-text"
+                      ><span class="list-text__mark">Выбор</span> объекта</span
+                    >
+                  </li>
+                  <li class="card-description__list-elem">
+                    <img
+                      src="./images/house/green_mark.png"
+                      alt="green_mark"
+                      class="card-description__tick"
+                    /><span class="card-description__list-text list-text"
+                      ><span class="list-text__mark">Расчет</span>
+                      стоимости</span
+                    >
+                  </li>
+                  <li class="card-description__list-elem">
+                    <img
+                      src="./images/house/green_mark.png"
+                      alt="green_mark"
+                      class="card-description__tick"
+                    /><span class="card-description__list-text"
+                      ><span class="list-text__mark">Утверждение</span>
+                      планировки</span
+                    >
+                  </li>
+                </ul>
+                <div class="card-description__info">
+                  <div class="card-description__info-circle">
+                    <img
+                      src="./images/house/white_point.png"
+                      alt="info"
+                      class="card-description__info-circle-icon"
+                    />
+                    <img
+                      src="./images/house/info.png"
+                      alt="info"
+                      class="card-description__info-icon"
+                    />
+                  </div>
+
+                  <span class="card-description__info-text info-text"
+                    >Первый этап
+                    <span class="info-text__mark"
+                      >помогает вам узнать<br />
+                      преимущества работы с нами<br
+                    /></span>
+                    и ни к чему вас не обязывает</span
+                  >
+                </div>
+              </div>
+
+              <img
+                src="./images/house/contract.png"
+                alt="contract"
+                class="card-description__contract"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-gift section_bg">
+      <div class="container gift__wrapper">
+        <h2 class="section-gift__title title">
+          <span class="title__mark">Акции и подарки</span> для каждой семьи
+        </h2>
+        <div class="gift__inner">
+          <img
+            src="./images/gift/left_arrow.png"
+            alt="left_arrow"
+            class="gift__inner-arrow"
+          />
+          <div class="gift__inner-left-card gift-card">
+            <h3 class="gift-card__title">
+              Любая перепланировка<br />
+              в подарок!
+            </h3>
+            <p class="gift-card__text">
+              <span class="gift-card__text-mark">Рыбатекст</span>
+              используется дизайнерами,<br />
+              <span class="gift-card__text-mark">проектировщиками</span>
+              и фронтендерами,<br />
+              когда нужно выстро заполнить
+              <span class="gift-card__text-mark">макеты<br /></span>
+              или прототипы содержимым.
+            </p>
+            <button class="gift-card__button">перейти к акции</button>
+          </div>
+          <div class="gift__inner-right-card gift-card">
+            <div class="gift-card__description">
+              <h3 class="gift-card__title">
+                Металлическая<br />
+                дверь в подарок!
+              </h3>
+              <p class="gift-card__text">
+                <span class="gift-card__text-mark">Рыбатекст</span>
+                используется дизайнерами,<br />
+                <span class="gift-card__text-mark">проектировщиками</span>
+                и фронтендерами,<br />
+                когда нужно выстро заполнить
+                <span class="gift-card__text-mark">макеты<br /></span>
+                или прототипы содержимым.
+              </p>
+              <button class="gift-card__button">перейти к акции</button>
+            </div>
+            <div class="gift-card__discount">
+              <img
+                src="./images/gift/orange_point.png"
+                alt="orange_point"
+                class="gift-card__point"
+              />
+              <span class="gift-card__discount-text"
+                >15<span class="gift-card__percent"> %</span></span
+              >
+              <span>скидка</span>
+            </div>
+          </div>
+          <img
+            src="./images/gift/right_arrow.png"
+            alt="right_arrow"
+            class="gift__inner-arrow"
+          />
+        </div>
+        <div class="gift__footer">
+          <img
+            src="./images/gift/buttons.png"
+            alt="buttons"
+            class="gift__buttons"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="section-released section_bg">
+      <div class="container released__wrapper">
+        <h2 class="section-released__title title">
+          <span class="title__mark">Посмотрите</span>
+          дома, построенные нами<br />
+          за прошлый год
+        </h2>
+        <div class="released__inner">
+          <div class="released__inner-card">
+            <div class="released__inner-gallery gallery">
+              <div class="gallery__image">
+                <button class="gallery__image-button image-button">
+                  Срок строительства:
+                  <span class="image-button__text-mark">35 дней</span>
+                </button>
+              </div>
+              <div class="gallery__images">
+                <img
+                  src="./images/homes/small_image_home.png"
+                  alt="small_image_home"
+                  class="gallery__thumbnail"
+                />
+
+                <div class="gallery__thumbnail-mark">
+                  <img
+                    src="./images/homes/zoom.png"
+                    alt="zoom"
+                    class="gallery__zoom"
+                  />
+                </div>
+
+                <img
+                  src="./images/homes/small_image_home.png"
+                  alt="small_image_home"
+                  class="gallery__thumbnail"
+                />
+
+                <img
+                  src="./images/homes/small_image_home.png"
+                  alt="small_image_home"
+                  class="gallery__thumbnail"
+                />
+              </div>
+            </div>
+            <div class="released__inner-description released-description">
+              <div class="released-description__location">
+                <img
+                  src="./images/homes/location.png"
+                  alt="location"
+                  class="released-description__location-icon"
+                />
+                <a href="./#" class="released-description__location-link"
+                  >Показать на карте</a
+                >
+              </div>
+              <h3 class="released-description__title">
+                Дом из сруба &quot;Атаман&quot;<br />
+                в Пестово
+              </h3>
+              <ul class="released__inner-features features-list">
+                <li class="features-list__elem">
+                  <img
+                    src="./images/homes/orange_point.png"
+                    alt="orange_point"
+                    class="features-list__elem-point"
+                  />
+                  <span class="features-list__elem-description"
+                    >Стоимость строительства:</span
+                  >
+                  <span class="features-list__elem-value"
+                    ><span class="features-list__elem-value-mark"
+                      >1 780 000</span
+                    >
+                    руб</span
+                  >
+                </li>
+                <li class="features-list__elem">
+                  <img
+                    src="./images/homes/orange_point.png"
+                    alt="orange_point"
+                    class="features-list__elem-point"
+                  />
+                  <span class="features-list__elem-description"
+                    >Сроки строительства:</span
+                  >
+                  <span class="features-list__elem-value"
+                    ><span class="features-list__elem-value-mark">35</span>
+                    дней</span
+                  >
+                </li>
+                <li class="features-list__elem">
+                  <img
+                    src="./images/homes/orange_point.png"
+                    alt="orange_point"
+                    class="features-list__elem-point"
+                  />
+                  <span class="features-list__elem-description"
+                    >Общая площадь:</span
+                  >
+                  <span class="features-list__elem-value"
+                    ><span class="features-list__elem-value-mark">120</span>
+                    м.кв.</span
+                  >
+                </li>
+              </ul>
+              <ul class="released__inner-info info-list">
+                <li class="info-list__elem">
+                  Площадь:
+                  <span class="info-list__elem-text-mark">120 кв.м.</span>
+                </li>
+                <li class="info-list__elem">
+                  Размеры:
+                  <span class="info-list__elem-text-mark">7х9</span>
+                </li>
+                <li class="info-list__elem">
+                  Тип работ:
+                  <span class="info-list__elem-text-mark">Под ключ</span>
+                </li>
+                <li class="info-list__elem">
+                  Срок стройки:
+                  <span class="info-list__elem-text-mark">16 дней</span>
+                </li>
+                <li class="info-list__elem">
+                  Комнат:
+                  <span class="info-list__elem-text-mark">5</span>
+                </li>
+                <li class="info-list__elem">
+                  Фундамент:
+                  <span class="info-list__elem-text-mark"
+                    >Монолитная плита</span
+                  >
+                </li>
+              </ul>
+              <div class="released-description__footer">
+                <span class="released-description__footer-tip"
+                  ><span class="released-description__footer-tip-mark"
+                    >Понравился дом?</span
+                  >
+                  Рассчитайте<br />
+                  стоимость в калькуляторе</span
+                >
+
+                <button
+                  class="released-description__footer-button released-button"
+                >
+                  <span class="released-button__text">Рассчитать стоимость</span
+                  ><img
+                    src="./images/homes/calculator.png"
+                    alt="calculator"
+                    class="released-button__icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./images/homes/right_arrow.png"
+            alt="right_arrow"
+            class="released__inner-arrow"
+          />
+        </div>
+        <div class="released__footer">
+          <img
+            src="./images/homes/buttons.png"
+            alt="buttons"
+            class="released__inner-buttons"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="section-excursion section_bg">
+      <div class="container excursion__wrapper">
+        <div class="section-excursion__inner">
+          <h2 class="section-excursion__title title">
+            Запишитесь на
+            <span class="title__mark"
+              >бесплатную<br />
+              экскурсию</span
+            >
+            по строящимся<br />
+            объектам
+          </h2>
+          <h3 class="section-excursion__subtitle">
+            На экскурсии вы сможете пообщаться с прорабом<br />
+            и строителями, а также:
+          </h3>
+          <ul class="section-excursion__advantages excursion-advantages">
+            <li class="excursion-advantages__elem">
+              <img
+                src="./images/excursion/green_mark.png"
+                alt="green_mark"
+                class="excursion-advantages__tick"
+              />
+              <span class="excursion-advantages__text"
+                ><span class="excursion-advantages__text-mark"
+                  >Познакомитесь<br
+                /></span>
+                с технологией<br />
+                строительств</span
+              >
+            </li>
+            <li class="excursion-advantages__elem">
+              <img
+                src="./images/excursion/green_mark.png"
+                alt="green_mark"
+                class="excursion-advantages__tick"
+              />
+              <span class="excursion-advantages__text"
+                ><span class="excursion-advantages__text-mark">Оцените</span>
+                качество<br />
+                материалов<br />
+                на стройплощадке</span
+              >
+            </li>
+            <li class="excursion-advantages__elem">
+              <img
+                src="./images/excursion/green_mark.png"
+                alt="green_mark"
+                class="excursion-advantages__tick"
+              />
+              <span class="excursion-advantages__text"
+                ><span class="excursion-advantages__text-mark">Зададите</span>
+                вопросы<br />
+                руководителю<br />
+                строительства</span
+              >
+            </li>
+          </ul>
+          <form class="section-excursion__form excursion-form">
+            <div class="excursion-form__date">
+              <label for="date" class="excursion-form__label"
+                >Укажите дату: </label
+              ><input
+                type="date"
+                id="date"
+                class="excursion-form__input-date"
+                value="2022-01-23"
+              />
+            </div>
+            <div class="excursion-form__tel">
+              <label for="phone" class="excursion-form__label"
+                >Введите телефон: </label
+              ><input
+                type="tel"
+                id="phone"
+                class="excursion-form__input-tel"
+                placeholder="+7"
+              />
+            </div>
+            <button class="excursion-form__button">
+              Записаться на экскурсию
+            </button>
+          </form>
+          <p class="section-excursion__conf excursion-conf">
+            Нажимая на кнопку, вы соглашаетесь с условиями<br />
+            <a href="./#" class="excursion-conf__link"
+              >Политики конфиденциальности</a
+            >
+          </p>
+        </div>
+        <img
+          src="./images/excursion/tree.png"
+          alt="tree"
+          class="section-excursion__tree"
+        />
+      </div>
+    </section>
+    <section class="section-catalog section_bg">
+      <div class="container catalog__wrapper">
+        <h2 class="section-catalog__title title">
+          <span class="title__mark"
+            >Скачайте каталог<br />
+            проектов</span
+          >
+          с ценами<br />
+          и планировками
+        </h2>
+        <div class="section-catalog__card catalog-card">
+          <h3 class="catalog-card__title">
+            <span class="catalog-card__title-mark">Скачайте каталог<br /></span>
+            топовых проектов
+          </h3>
+          <p class="catalog-card__description">
+            Мы вышлем подборку<br />
+            вам в мессенджер
+          </p>
+          <p class="catalog-card__description-mark">Куда отправить подборку?</p>
+          <form class="section-catalog__form catalog-form">
+            <div class="catalog-form__radio">
+              <input
+                type="radio"
+                name="social"
+                value="whatsapp"
+                id="catalog_whatsapp"
+                class="catalog-form__input-radio"
+              />
+              <label for="catalog_whatsapp" class="catalog-form__label"
+                ><img
+                  src="./images/catalog/whatsapp.png"
+                  alt="whatsapp"
+                  class="catalog-form__radio-icon"
+                />What&#39;s app</label
+              >
+
+              <input
+                type="radio"
+                name="social"
+                value="viber"
+                id="catalog_viber"
+                class="catalog-form__input-radio"
+                checked
+              />
+              <label for="catalog_viber" class="catalog-form__label"
+                ><img
+                  src="./images/catalog/viber.png"
+                  alt="viber"
+                  class="catalog-form__radio-icon"
+                />Viber</label
+              >
+
+              <input
+                type="radio"
+                name="social"
+                value="telegram"
+                id="catalog_telegram"
+                class="catalog-form__input-radio"
+              />
+              <label for="catalog_telegram" class="catalog-form__label"
+                ><img
+                  src="./images/catalog/telegram.png"
+                  alt="telegram"
+                  class="catalog-form__radio-icon"
+                />Telegram</label
+              >
+            </div>
+            <input
+              type="tel"
+              class="catalog-form__input-tel"
+              placeholder="+7"
+            />
+            <button class="catalog-form__button">
+              Получить каталог проектов
+            </button>
+            <p class="catalog-form__conf catalog-conf">
+              Нажимая на кнопку, вы соглашаетесь с условиями<br />
+              <a href="./#" class="catalog-conf__link"
+                >Политики конфиденциальности</a
+              >
+            </p>
+          </form>
+        </div>
+        <img
+          src="./images/catalog/catalog.png"
+          alt="catalog"
+          class="section-catalog__background-image"
+        />
+      </div>
+    </section>
+    <section class="section-review section_bg">
+      <div class="container review__wrapper">
+        <h2 class="section-review__title title">
+          Более 200 отзывов
+          <span class="title__mark">от наших клиентов</span>
+        </h2>
+        <div class="review__inner">
+          <img
+            src="./images/review/left_arrow.png"
+            alt="left_arrow"
+            class="review__inner-arrow"
+          />
+          <div class="review__inner-card review-card">
+            <figure class="review-card__figure">
+              <img
+                src="./images/review/person_1.png"
+                alt="person_1"
+                class="review-card__person"
+              />
+              <figcaption class="review-card__figcaption">
+                <div class="review-card__header">
+                  <h3 class="review-card__title">
+                    Дарья<br />
+                    Достоевская
+                  </h3>
+                  <span class="review-card__date">23 декабря 2022</span>
+                </div>
+                <img
+                  src="./images/review/google.png"
+                  alt="google"
+                  class="review-card__google"
+                />
+              </figcaption>
+            </figure>
+            <p class="review-card__description">
+              Рыбатекст используется дизайнерами,<br />
+              проектировщиками и фронтендерами,<br />
+              когда нужно быстро заполнить макеты<br />
+              или прототипы содержимым...
+              <a href="./#" class="review-card__description-link"
+                >Читать дальше</a
+              >
+            </p>
+          </div>
+          <div class="review__inner-card review-card">
+            <figure class="review-card__figure">
+              <img
+                src="./images/review/person_2.png"
+                alt="person_2"
+                class="review-card__person"
+              />
+              <figcaption class="review-card__figcaption">
+                <div class="review-card__header">
+                  <h3 class="review-card__title">
+                    Евгений<br />
+                    Маяковский
+                  </h3>
+                  <span class="review-card__date">23 декабря 2022</span>
+                </div>
+                <img
+                  src="./images/review/google.png"
+                  alt="google"
+                  class="review-card__google"
+                />
+              </figcaption>
+            </figure>
+            <p class="review-card__description">
+              Рыбатекст используется дизайнерами,<br />
+              проектировщиками и фронтендерами,<br />
+              когда нужно быстро заполнить макеты<br />
+              или прототипы содержимым...
+              <a href="./#" class="review-card__description-link"
+                >Читать дальше</a
+              >
+            </p>
+          </div>
+          <div class="review__inner-card review-card">
+            <figure class="review-card__figure">
+              <img
+                src="./images/review/person_1.png"
+                alt="person_1"
+                class="review-card__person"
+              />
+              <figcaption class="review-card__figcaption">
+                <div class="review-card__header">
+                  <h3 class="review-card__title">
+                    Дарья<br />
+                    Достоевская
+                  </h3>
+                  <span class="review-card__date">23 декабря 2022</span>
+                </div>
+                <img
+                  src="./images/review/google.png"
+                  alt="google"
+                  class="review-card__google"
+                />
+              </figcaption>
+            </figure>
+            <p class="review-card__description">
+              Рыбатекст используется дизайнерами,<br />
+              проектировщиками и фронтендерами,<br />
+              когда нужно быстро заполнить макеты<br />
+              или прототипы содержимым...
+              <a href="./#" class="review-card__description-link"
+                >Читать дальше</a
+              >
+            </p>
+          </div>
+          <img
+            src="./images/review/right_arrow.png"
+            alt="right_arrow"
+            class="review__inner-arrow"
+          />
+        </div>
+        <div class="review__footer">
+          <img
+            src="./images/review/buttons.png"
+            alt="buttons"
+            class="review__buttons"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="section-director section_bg">
+      <div class="container director__wrapper">
+        <img
+          src="./images/director/director.png"
+          alt="director"
+          class="section-director__image"
+        />
+
+        <div class="section-director__card director-card">
+          <h2 class="director-card__title">
+            <span class="director-card__title-mark"
+              >Здравствуйте,<br />
+              я Олег Соловьев,<br
+            /></span>
+            директор и основатель<br />
+            компании.
+          </h2>
+          <p class="director-card__description">
+            На рынке строительных услуг мы уже 14 лет. за это время нам
+            удалось<br />
+            сформировать сплоченный коллектив специалистов с более<br />
+            чем двадцатилетним стажем. Вместе с тем я слежу за тем,<br />
+            чтобы наши специалисты оставались в курсе последних<br />
+            технологий, совершенствовали свои навыки.
+          </p>
+          <ul class="director-card__advantages director-advantages">
+            <li class="director-advantages__elem">
+              <div class="director-advantages__elem-text">
+                <img
+                  src="./images/director/orange_point.png"
+                  alt="orange_point"
+                  class="director-advantages__point"
+                />
+
+                <span class="director-advantages__elem-value"
+                  ><span class="director-advantages__elem-value-mark">10</span>
+                  лет</span
+                >
+              </div>
+              <span class="director-advantages__elem-description"
+                >компания<br />
+                на рынке</span
+              >
+            </li>
+            <li class="director-advantages__elem">
+              <div class="director-advantages__elem-text">
+                <img
+                  src="./images/director/orange_point.png"
+                  alt="orange_point"
+                  class="director-advantages__point"
+                />
+
+                <span class="director-advantages__elem-value"
+                  ><span class="director-advantages__elem-value-mark">200</span>
+                  +</span
+                >
+              </div>
+              <span class="director-advantages__elem-description"
+                >объектов<br />
+                построено</span
+              >
+            </li>
+            <li class="director-advantages__elem">
+              <div class="director-advantages__elem-text">
+                <img
+                  src="./images/director/orange_point.png"
+                  alt="orange_point"
+                  class="director-advantages__point"
+                />
+
+                <span class="director-advantages__elem-value"
+                  ><span class="director-advantages__elem-value-mark">5</span>
+                  лет</span
+                >
+              </div>
+              <span class="director-advantages__elem-description"
+                >гарантия<br />
+                на работы</span
+              >
+            </li>
+          </ul>
+        </div>
+        <img
+          src="./images/director/tree.png"
+          alt="tree"
+          class="director__tree"
+        />
+      </div>
+    </section>
+    <section class="section-question section_bg">
+      <div class="container question__wrapper">
+        <div class="section-question__header">
+          <h2 class="section-question__title title">
+            Мы готовы ответить<br />
+            на
+            <span class="title__mark">любой вопрос</span>
+          </h2>
+          <p class="section-question__description">
+            Рыбатекст используется дизайнерами,<br />
+            <span class="section-question__description-mark"
+              >проектировщиками</span
+            >
+            и фронтендерами,<br />
+            когда нужно выстро заполнить
+            <span class="section-question__description-mark">макеты<br /></span>
+            или прототипы содержимым.
+          </p>
+        </div>
+        <div class="section-question__card question-card">
+          <ul class="question-card__list">
+            <li class="question-card__list-elem question">
+              <div class="question__description">
+                <div class="question__icon">
+                  <img
+                    src="./images/question/down_arrow.png"
+                    alt="down_arrow"
+                    class="question__down-arrow"
+                  />
+                  <img
+                    src="./images/question/arrow_background.png"
+                    alt="arrow_background"
+                    class="question__background-arrow"
+                  />
+                </div>
+
+                <div class="question__text">
+                  Возможна ли разработка индивидуального проекта?
+                </div>
+              </div>
+              <p class="question__answer"></p>
+            </li>
+            <li class="question-card__list-elem question">
+              <div class="question__description-selected">
+                <div class="question__icon">
+                  <img
+                    src="./images/question/up_arrow.png"
+                    alt="up_arrow"
+                    class="question__up-arrow"
+                  />
+                  <img
+                    src="./images/question/arrow_background.png"
+                    alt="arrow_background"
+                    class="question__background-arrow"
+                  />
+                </div>
+
+                <div class="question__text">
+                  Возможна ли разработка индивидуального проекта?
+                </div>
+              </div>
+              <p class="question__answer question__answer_selected">
+                Рыбатекст используется дизайнерами,
+                <span class="question__answer-mark">проектировщиками</span>
+                и фронтендерами,<br />
+                когда нужно выстро заполнить
+                <span class="question__answer-mark">макеты</span>
+                или прототипы содержимым. Рыбатекст<br />
+                используется дизайнерами,
+                <span class="question__answer-mark">проектировщиками</span>
+                и фронтендерами
+              </p>
+            </li>
+            <li class="question-card__list-elem question">
+              <div class="question__description">
+                <div class="question__icon">
+                  <img
+                    src="./images/question/down_arrow.png"
+                    alt="down_arrow"
+                    class="question__down-arrow"
+                  />
+                  <img
+                    src="./images/question/arrow_background.png"
+                    alt="arrow_background"
+                    class="question__background-arrow"
+                  />
+                </div>
+                <div class="question__text">
+                  Возможна ли разработка индивидуального проекта?
+                </div>
+              </div>
+              <p class="question__answer"></p>
+            </li>
+            <li class="question-card__list-elem question">
+              <div class="question__description">
+                <div class="question__icon">
+                  <img
+                    src="./images/question/down_arrow.png"
+                    alt="down_arrow"
+                    class="question__down-arrow"
+                  />
+                  <img
+                    src="./images/question/arrow_background.png"
+                    alt="arrow_background"
+                    class="question__background-arrow"
+                  />
+                </div>
+
+                <div class="question__text">
+                  Возможна ли разработка индивидуального проекта?
+                </div>
+              </div>
+              <p class="question__answer"></p>
+            </li>
+            <li class="question-card__list-elem question">
+              <div class="question__description">
+                <div class="question__icon">
+                  <img
+                    src="./images/question/down_arrow.png"
+                    alt="down_arrow"
+                    class="question__down-arrow"
+                  />
+                  <img
+                    src="./images/question/arrow_background.png"
+                    alt="arrow_background"
+                    class="question__background-arrow"
+                  />
+                </div>
+                <div class="question__text">
+                  Возможна ли разработка индивидуального проекта?
+                </div>
+              </div>
+              <p class="question__answer"></p>
+            </li>
+            <li class="question-card__list-elem question">
+              <div class="question__description">
+                <div class="question__icon">
+                  <img
+                    src="./images/question/down_arrow.png"
+                    alt="down_arrow"
+                    class="question__down-arrow"
+                  />
+                  <img
+                    src="./images/question/arrow_background.png"
+                    alt="arrow_background"
+                    class="question__background-arrow"
+                  />
+                </div>
+
+                <div class="question__text">
+                  Возможна ли разработка индивидуального проекта?
+                </div>
+              </div>
+              <p class="question__answer"></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-outlay section_bg">
+      <div class="container outlay__wrapper">
+        <div class="section-outlay__inner">
+          <div class="section-outlay__description">
+            <h2 class="section-outlay__title title">
+              <span class="title__mark"
+                >Если у вас уже есть<br />
+                смета на строительство<br
+              /></span>
+              в 95% случаев мы предлагаем<br />
+              меньшую стоимость<br />
+              и без потери качества
+            </h2>
+            <h3 class="section-outlay__subtitle">Как мы этого добиваемся?</h3>
+            <ul class="section-outlay__advantages advantages-list">
+              <li class="advantages-list__elem advantages-elem">
+                <img
+                  src="./images/outlay/green_mark.png"
+                  alt="green_mark"
+                  class="advantages-elem__tick"
+                />
+                <span class="advantages-elem__text"
+                  ><span class="advantages-elem__text-mark"
+                    >Оптовые скидки</span
+                  >
+                  на проверенные материалы<br />
+                  от партнеров (экономия до 30%)</span
+                >
+              </li>
+              <li class="advantages-list__elem advantages-elem">
+                <img
+                  src="./images/outlay/green_mark.png"
+                  alt="green_mark"
+                  class="advantages-elem__tick"
+                />
+                <span class="advantages-elem__text"
+                  ><span class="advantages-elem__text-mark"
+                    >Оптимальный подбор</span
+                  >
+                  материалов<br />
+                  и поставщиков (экономия до 15%)</span
+                >
+              </li>
+              <li class="advantages-list__elem advantages-elem">
+                <img
+                  src="./images/outlay/green_mark.png"
+                  alt="green_mark"
+                  class="advantages-elem__tick"
+                />
+                <span class="advantages-elem__text"
+                  ><span class="advantages-elem__text-mark"
+                    >Налаженный рабочий процесс</span
+                  >
+                  без потери<br />
+                  времени (экономия до 20%)</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="section-outlay__card outlay-card">
+            <h3 class="outlay-card__title">
+              Просто прикрепите<br />
+              готовую смету и вы узнаете,<br />
+              как сэкономить на стройке
+            </h3>
+            <p class="outlay-card__description">
+              Инженер-сметчик рассчитает стоимость<br />
+              работ и материалов по оптовым ценам
+            </p>
+
+            <form class="section-outlay__form outlay-form">
+              <input
+                type="file"
+                class="outlay-form__input-file"
+                id="outlay-file"
+              />
+              <label for="outlay-file" class="outlay-form__file-label">
+                <img
+                  src="./images/outlay/clip.png"
+                  alt="clip"
+                  class="outlay-form__clip"
+              /></label>
+              <p class="outlay-card__description-mark">
+                Куда отправить подборку?
+              </p>
+
+              <div class="outlay-form__radio">
+                <input
+                  type="radio"
+                  name="outlay_radio"
+                  value="whatsapp"
+                  id="outlay-whatsapp"
+                  class="outlay-form__input-radio"
+                />
+
+                <label for="outlay-whatsapp" class="outlay-form__label"
+                  ><img
+                    src="./images/outlay/whatsapp.png"
+                    alt="whatsapp"
+                    class="outlay-form__radio-icon"
+                  />What&#39;s app</label
+                >
+
+                <input
+                  type="radio"
+                  name="outlay_radio"
+                  value="viber"
+                  id="outlay-viber"
+                  class="outlay-form__input-radio"
+                  checked
+                />
+                <label
+                  for="outlay-viber"
+                  class="outlay-form__label outlay-form__label_selected"
+                  ><img
+                    src="./images/outlay/viber.png"
+                    alt="viber"
+                    class="outlay-form__radio-icon"
+                  />Viber</label
+                >
+
+                <input
+                  type="radio"
+                  name="outlay_radio"
+                  value="telegram"
+                  id="outlay-telegram"
+                  class="outlay-form__input-radio"
+                />
+                <label for="outlay-telegram" class="outlay-form__label"
+                  ><img
+                    src="./images/outlay/telegram.png"
+                    alt="telegram"
+                    class="outlay-form__radio-icon"
+                  />Telegram</label
+                >
+              </div>
+              <input
+                type="tel"
+                class="outlay-form__input-tel"
+                placeholder="+7"
+              />
+              <button class="outlay-form__button">Получить смету</button>
+              <p class="outlay-form__conf outlay-conf">
+                Нажимая на кнопку, вы соглашаетесь с условиями<br />
+                <a href="./#" class="outlay-conf__link"
+                  >Политики конфиденциальности</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <img
+          src="./images/outlay/outlay_tree.png"
+          alt="tree"
+          class="outlay__tree"
+        />
+        <img
+          src="./images/outlay/divider.png"
+          alt="divider"
+          class="section-outlay__divider"
+        />
+      </div>
+    </section>
+    <section class="section-contacts section_bg">
+      <div class="container contacts__wrapper">
+        <div class="section-contacts__card contacts-card">
+          <h3 class="contacts-card__title title">Наши контакты</h3>
+          <p class="contacts-card__address">
+            <img
+              src="./images/contacts/location.png"
+              alt="location"
+              class="contacts-card__address-icon"
+            /><span class="contacts-card__address-text"
+              >г. Москва, улица Рубинштейна, 43</span
+            >
+          </p>
+          <p class="contacts-card__shedule">
+            <img
+              src="./images/contacts/green_point.png"
+              alt="green_point"
+              class="contacts-card__shedule-point"
+            /><span class="contacts-card__shedule-text"
+              >Без выходных с 10:00 до 20:00</span
+            >
+          </p>
+          <p class="contacts-card__phone">+ 7 (800) 000-00-00</p>
+          <p class="contacts-card__ordering">
+            <a href="./#" class="contacts-card__ordering-link"
+              >Заказать обратный звонок</a
+            >
+          </p>
+          <p class="contacts-card__online-text">
+            <img
+              src="./images/contacts/green_point.png"
+              alt="green_point"
+              class="contacts-card__shedule-point"
+            />Пишите , мы онлайн
+          </p>
+          <div class="contacts-card__icons">
+            <img
+              src="./images/contacts/phone.png"
+              alt="phone"
+              class="contacts-card__phone-img"
+            />
+            <img
+              src="./images/contacts/letter.png"
+              alt="letter"
+              class="contacts-card__letter-img"
+            />
+          </div>
+          <button class="contacts-card__button">
+            <span class="contacts-card__button-text">Рассчитать стоимость</span
+            ><img
+              src="./images/contacts/calculator.png"
+              alt="calculator"
+              class="contacts-card__button-icon"
+            />
+          </button>
+        </div>
+        <div class="section-contacts__map contacts-map">
+          <h3 class="contacts-map__title title">Приезжайте к нам в офис</h3>
+          <img
+            src="./images/contacts/map.png"
+            alt="map"
+            class="contacts-map__img"
+          />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <nav class="footer__navigation">
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-elem">
+              <a href="./#" class="footer__navigation-link"
+                >проекты<img
+                  src="./images/footer/down_arrow.png"
+                  alt="down_arrow"
+                  class="footer__navigation-arrow"
+              /></a>
+            </li>
+            <li class="footer__navigation-elem">
+              <a href="./#" class="footer__navigation-link">фото работ</a>
+            </li>
+            <li class="footer__navigation-elem">
+              <a href="./#" class="footer__navigation-link">акции</a>
+            </li>
+            <li class="footer__navigation-elem">
+              <a href="./#" class="footer__navigation-link"
+                >услуги<img
+                  src="./images/footer/down_arrow.png"
+                  alt="down_arrow"
+                  class="footer__navigation-arrow"
+              /></a>
+            </li>
+            <li class="footer__navigation-elem">
+              <a href="./#" class="footer__navigation-link"
+                >заказчику<img
+                  src="./images/footer/down_arrow.png"
+                  alt="down_arrow"
+                  class="footer__navigation-arrow"
+              /></a>
+            </li>
+            <li class="footer__navigation-elem">
+              <a href="./#" class="footer__navigation-link">контакты</a>
+            </li>
+            <li class="footer__navigation-elem">
+              <a href="./#" class="footer__navigation-link"
+                ><img
+                  src="./images/footer/favourite.png"
+                  alt="favourite"
+                  class="footer__navigation-favourite"
+                />избранное</a
+              >
+            </li>
+            <li class="footer__navigation-elem">
+              <a href="./#" class="footer__navigation-link"
+                ><img
+                  src="./images/footer/search.png"
+                  alt="search"
+                  class="footer__navigation-search"
+                />поиск</a
+              >
             </li>
           </ul>
         </nav>
-        </div>
-      </header>
 
-      <div class="header-inner">
-        
-        <h1 class="header-inner__tittle">Строительство
-          <br>деревянных домов
-          <br><span class="header-inner__tittle__header">под ключ в Курске</span>
-        </h1>
-
-        <p class="header-inner__description">
-          Построим теплый и надежный дом
-          <br><span class="header-inner__description-text">с гарантией 10 лет</span>
-        </p>
-
-        
-        <button class="header-inner__button">
-          рассчитать стоимость</button>
-
-        <div class="header-inner_advantages">
-          <div class="advantages_inner">
-            <img src="./images/icon/helmet.svg" alt="" class="advanteges_inner-icon">
-            <span class="advantages_inner-description">
-              40 собственных<br>опытных бригад
-            </span>
-          </div>
-
-          <div class="advantages_inner">
-            <img src="./images/icon/brush.svg" alt="" class="advanteges_inner-icon">
-            <span class="advantages_inner-description">
-              Свое производство<br>строительных материалов
-            </span>
-          </div>
-
-          <div class="advantages_inner">
-            <img src="./images/icon/daw.svg" alt="" class="advanteges_inner-icon">
-            <span class="advantages_inner-description">
-              Тысячи довольных<br>клиентов с 1998 года
-            </span>
-          </div>
-
-          <div class="advantages_inner">
-            <img src="./images/icon/guarantee.svg" alt="" class="advanteges_inner-icon">
-            <span class="advantages_inner-description">
-            Гарантия на все строительные<br>работы по договору
-            </span>
-          </div>
-
+        <div class="footer__conf">
+          <span class="footer__conf-copyright">Все права защищены 2022.</span>
+          <a href="./#" class="footer__conf-link"
+            >Политика обработки персональных данных</a
+          >
         </div>
       </div>
-
-      <section class="section__info">
-        <img src="./images/Derevo-bez-fona.png" alt="derevo" class="section_info_derevo">
-        
-        <div class="section__calculation_section">
-          
-          
-
-          <div class="section__arch"> 
-            <img src="./images/section_calc/man.png"   alt="man" class="section_man">
-            <img src="./images/icon/checkbox.svg" alt="checkbox" class="checkbox_man">
-            <h2 class="worker_fio">Михаил Иванов</h2>
-            <h4 class="job_title">Ведущий архитектор</h4>
-            <h3 class="advantages_calculation">Ответив на вопросы 
-              <span class="advantages_calculation_advantages"> вы получите:</span>
-              
-
-              <div class="button_advantages">
-                <button class="button_advantages-sale">
-                  <img src="./images/section_calc/open_lock.svg" alt="open_lock">
-                  <p class="button_advantages-text">Гарантированную <span class="button_advantages-text-button">скидку</span></p>
-                  <img src="./images/section_calc/1.svg" alt="1">
-                  <img src="./images/section_calc/percent.svg" alt="percent">
-                </button>
-
-                <button class="button_advantages-build">
-                  <img src="./images/section_calc/closed_lock.svg" alt="closed_lock">
-                  <p class="button_advantages-text1">Ориентировочную <span class="button_advantages-text-button2">стоимость строительства</span></p>
-                </button>
-
-                <button class="button_advantages-selections">
-                  <img src="./images/section_calc/closed_lock.svg" alt="closed_lock">
-                  <p class="button_advantages-text1">Точную подборку <span class="button_advantages-text-button2">проектов исходя изваших ответов</span></p>
-
-                </button>
-              </div>
-            </h3>
-        </div>
-
-        <div id="rectange__right" class="rectange__right"></div>
-
-          <h2 class="section__tittle">Рассчитайте предварительную<br>
-            стоимость <span class="section__tittle_section">дома за 1 минуту</span>
-          </h2>
-
-            <div id="rectange_swipe" class="section__swipe"></div>
-
-            <div class=" mask__swipe">
-              <img src="./images/swipe.png" alt="">
-            </div>
-
-            <div id="rectange__number" class="rectange__number"></div>
-            <p class="rectange__number-one">01.</p>
-            <p class="section__choice">Что будем строить?</p>
-
-            <div class="choise__build">
-              <div class="choise__build_calc">
-                <img src="./images/section_calc/calc_house.png" alt="calc__house">
-                <span class="choise__build-text">Дом</span>
-                <img src="./images/section_calc/calc_bath.png" alt="calc__bath">
-                <span class="choise__build-text">Баня</span>
-
-                <div class="button__choise">
-                  <button class="choise_orange">
-                    <img src="./images/section_calc/choise_white.svg" alt="choise_orange">
-                  </button>
-                  <button class="choise_gray">
-                    <img src="./images/section_calc/choise_gray.svg" alt="choise_gray">
-                  </button>
-                </div>
-
-                <div class="choise__info">
-                  <img src="./images/section_calc/cursor_info.svg" alt="">
-                  <h5 class="choise_info_text">Нажимайте на вариант ответа 
-                    <span class="choise_info_text_choise">и переходите к следующему вопросу</span>
-                  </h5>
-                </div>
-                
-                <div class="button_further">
-                  <button class="further_button_text">
-                    Далее
-                  </button>
-                </div>
-                
-            </div>
-          </div>
-        </div>
-        
-        <div class="section__house_price">
-          <h2 class="section__house_price-text">Мы строим деревянные дома и бани <span>с учетом <br>всех особенностей Курска</span>
-          </h2>
-
-          <div class="section__house_price-catalog">
-            <div class="div1">
-              <div class="section__card-line">
-                <h3 class="frame_houses">Каркасные дома</h3>
-                <button class="project-button">100+</button>
-              </div>
-              <div class="section__card-line1">
-                <h4 class="frame_houses-price">от <span>21 800</span>руб/м</h4>
-                <button class="project-button-view1">смотреть проекты</button>
-              </div>
-            </div>
-
-            <div class="div2">
-              <div class="section__card-line">
-                <h3 class="trans_baths">Перевозные бани</h3>
-                <button class="project-button">100+</button>
-              </div>
-              <div class="section__card-line">
-                <button class="project-button-view">смотреть проекты</button>
-                <h4 class="frame_houses-price">от <span>19 700</span>руб/м</h4>
-              </div>
-              
-            </div>
-            
-            <div class="div3">
-              <div class="section__card-line">
-                <h3 class="timber_houses">Дома из бруса</h3>
-                <button class="project-button">100+</button>
-              </div>
-              <div class="section__card-line">
-                <button class="project-button-view">смотреть проекты</button>
-                <h4 class="frame_houses-price">от <span>19 700</span>руб/м</h4>
-              </div>
-            </div>
-            
-            <div class="div4">
-              <div class="section__card-line">
-                <h3 class="timber_baths">Бани из <br>бруса</h3>
-                <button class="project-button">100+</button>
-              </div>
-              <div class="section__card-line">
-                <button class="project-button-view">смотреть проекты</button>
-                <h4 class="frame_houses-price">от <span>19 700 </span>руб/м</h4>
-              </div>
-            </div>
-            
-            <div class="div5">
-              <div class="section__card-line">
-                <h3 class="log_houses">Срубы под усадку</h3>
-                <button class="project-button">100+</button>
-              </div>
-              <div class="section__card-line">
-                <button class="project-button-view">смотреть проекты</button>
-                <h4 class="frame_houses-price">от <span>19 700 </span>руб/м</h4>
-              </div>
-            </div>
-            
-            <div class="div6">
-              <div class="section__card-line">
-                <h3 class="log_houses2">Срубы под усадку</h3>
-                <button class="project-button">100+</button>
-              </div>
-              <div class="section__card-line">
-                <button class="project-button-view">смотреть проекты</button>
-                <h4 class="frame_houses-price">от <span>19 700 </span>руб/м</h4>
-              </div>
-            </div>
-            
-            <div class="div7">
-              <div class="section__card-line">
-                <h3 class="frame_baths">Каркасные бани</h3>
-                <button class="project-button">100+</button>
-              </div>
-              <div class="section__card-line1">
-              
-                <h4 class="frame_houses-price">от <span>20 800 </span>руб/м</h4>
-                <button class="project-button-view1">смотреть проекты</button>
-                
-              </div>
-            </div>
-            
-          </div>
-          
-
-
-
-
-
-
-
-
-        </div>
-
-        <div class="section__project_build">
-          <h2 class="section__project_build-text">Посмотрите популярные проекты домов</h2>
-
-          <div class="section__navigation">
-
-            <ul class="section__navigation_list">
-              <a class="navigation_scroll">
-                <img src="./images/catalog_build_popular/nav_left.svg">
-              </a>
-
-              <li>
-                <a class="section__navigation_link" >Одноэтажный</a>
-              </li>
-
-              <li>
-                <a class="section__navigation_link-check">С мансардой</a>
-              </li>
-
-              <li>
-                <a class="section__navigation_link">Двухэтажный</a>
-              </li>
-
-              <li>
-                <a class="section__navigation_link">С цокольным этажом</a>
-              </li>
-
-              <li>
-                <a class="section__navigation_link">Трехэтажные</a>
-              </li>
-
-              <li>
-                <a class="section__navigation_link">С панорамными окнами</a>
-              </li>
-
-              <li>
-                <a class="section__navigation_link">С гаражом</a>
-              </li>
-
-              <a class="navigation_scroll">
-                <img src="./images/catalog_build_popular/nav_right.svg">
-              </a>
-
-              <a class="navigation__open_all">Смотреть все</a>
-            </ul>
-          </div>
-
-          <div class="catalog_build_popular">
-            <table class="catalog_build_popular_houses">
-              <tbody>
-                <tr>
-                  <td class="catalog_build-hoyse">
-                    <div id="rectange_build" class="section_build">
-                      <img src="./images/catalog_build_popular/skandi_house.svg" class="">
-                      <h2 class="build_name1">“Атаман”</h2>
-    
-                      <table class="info_build">
-                        <tbody>
-                          <tr>
-                            <td class="info_build-txt">Площадь: <span class="info_build-txt-build">108 м</span></td>
-                            <td class="info_build-txt">Срок стройки: <span class="info_build-txt-build">16 дней</span></td>
-                          </tr>
-                          <tr>
-                            <td class="info_build-txt">Размеры: <span class="info_build-txt-build">7x9</span></td>
-                            <td class="info_build-txt">Комнат: <span class="info_build-txt-build">5</span></td>
-                          </tr>
-                        </tbody>
-                      </table>
-    
-                      <div class="overview_house-type">
-                        <img src="./images/icon/dot.svg" alt="" class="type_house">
-                        <p class="type_house-text">Тип дома:<span class="type_house-text-type">Каркасный</span></p>
-                      </div>
-    
-                      <div class="overview_house-price">
-                        <img src="./images/icon/dot.svg" alt="" class="price_house">
-                        <p class="price_house-text">Стоимость: 
-                          <span class="price_house-text-price">от
-                            <span class="price_house-text-green">1 780 000</span>
-                          руб</span></p>
-                      </div>
-                      <div class="button__projects">
-                        <button class="button__projects-text">смотреть проекты
-                          <img src="./images/catalog_build_popular/button_open.svg" alt="" class="button__projects-text_projects">
-                        </button>
-                        
-                        <div class="individual_build">
-                          <img src="./images/catalog_build_popular/choise_build.svg" alt="" class="advantage_build-choise">
-                          <p class="advantage_build-text">Индивидуальная планировка дома</p>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </td>
-                  <td class="catalog_build-hoyse">
-                    <div id="rectange_build" class="section_build">
-                      <img src="./images/catalog_build_popular/skandi_house.svg" class="">
-                      <h2 class="build_name2">“Атаман”</h2>
-    
-                      <table class="info_build">
-                        <tbody>
-                          <tr>
-                            <td class="info_build-txt">Площадь: <span class="info_build-txt-build">108 м</span></td>
-                            <td class="info_build-txt">Срок стройки: <span class="info_build-txt-build">16 дней</span></td>
-                          </tr>
-                          <tr>
-                            <td class="info_build-txt">Размеры: <span class="info_build-txt-build">7x9</span></td>
-                            <td class="info_build-txt">Комнат: <span class="info_build-txt-build">5</span></td>
-                          </tr>
-                        </tbody>
-                      </table>
-    
-                      <div class="overview_house-type">
-                        <img src="./images/icon/dot.svg" alt="" class="type_house">
-                        <p class="type_house-text">Тип дома:<span class="type_house-text-type">Каркасный</span></p>
-                      </div>
-    
-                      <div class="overview_house-price">
-                        <img src="./images/icon/dot.svg" alt="" class="price_house">
-                        <p class="price_house-text">Стоимость: 
-                          <span class="price_house-text-price">от
-                            <span class="price_house-text-green">1 780 000</span>
-                          руб</span></p>
-                      </div>
-                      <div class="button__projects">
-                        <button class="button__projects-text">смотреть проекты
-                          <img src="./images/catalog_build_popular/button_open.svg" alt="" class="button__projects-text_projects">
-                        </button>
-                        
-                        <div class="individual_build">
-                          <img src="./images/catalog_build_popular/choise_build.svg" alt="" class="advantage_build-choise">
-                          <p class="advantage_build-text">Индивидуальная планировка дома</p>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </td>
-                  <td class="catalog_build-hoyse">
-                    <div id="rectange_build" class="section_build">
-                      <img src="./images/catalog_build_popular/skandi_house.svg" class="">
-                      <h2 class="build_name3">“Атаман”</h2>
-    
-                      <table class="info_build">
-                        <tbody>
-                          <tr>
-                            <td class="info_build-txt">Площадь: <span class="info_build-txt-build">108 м</span></td>
-                            <td class="info_build-txt">Срок стройки: <span class="info_build-txt-build">16 дней</span></td>
-                          </tr>
-                          <tr>
-                            <td class="info_build-txt">Размеры: <span class="info_build-txt-build">7x9</span></td>
-                            <td class="info_build-txt">Комнат: <span class="info_build-txt-build">5</span></td>
-                          </tr>
-                        </tbody>
-                      </table>
-    
-                      <div class="overview_house-type">
-                        <img src="./images/icon/dot.svg" alt="" class="type_house">
-                        <p class="type_house-text">Тип дома:<span class="type_house-text-type">Каркасный</span></p>
-                      </div>
-    
-                      <div class="overview_house-price">
-                        <img src="./images/icon/dot.svg" alt="" class="price_house">
-                        <p class="price_house-text">Стоимость: 
-                          <span class="price_house-text-price">от
-                            <span class="price_house-text-green">1 780 000</span>
-                          руб</span></p>
-                      </div>
-                      <div class="button__projects">
-                        <button class="button__projects-text">смотреть проекты
-                          <img src="./images/catalog_build_popular/button_open.svg" alt="" class="button__projects-text_projects">
-                        </button>
-                        
-                        <div class="individual_build">
-                          <img src="./images/catalog_build_popular/choise_build.svg" alt="" class="advantage_build-choise">
-                          <p class="advantage_build-text">Индивидуальная планировка дома</p>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="catalog_build-hoyse">
-                    <div id="rectange_build" class="section_build">
-                      <img src="./images/catalog_build_popular/skandi_house.svg" class="">
-                      <h2 class="build_name4">“Атаман”</h2>
-    
-                      <table class="info_build">
-                        <tbody>
-                          <tr>
-                            <td class="info_build-txt">Площадь: <span class="info_build-txt-build">108 м</span></td>
-                            <td class="info_build-txt">Срок стройки: <span class="info_build-txt-build">16 дней</span></td>
-                          </tr>
-                          <tr>
-                            <td class="info_build-txt">Размеры: <span class="info_build-txt-build">7x9</span></td>
-                            <td class="info_build-txt">Комнат: <span class="info_build-txt-build">5</span></td>
-                          </tr>
-                        </tbody>
-                      </table>
-    
-                      <div class="overview_house-type">
-                        <img src="./images/icon/dot.svg" alt="" class="type_house">
-                        <p class="type_house-text">Тип дома:<span class="type_house-text-type">Каркасный</span></p>
-                      </div>
-    
-                      <div class="overview_house-price">
-                        <img src="./images/icon/dot.svg" alt="" class="price_house">
-                        <p class="price_house-text">Стоимость: 
-                          <span class="price_house-text-price">от
-                            <span class="price_house-text-green">1 780 000</span>
-                          руб</span></p>
-                      </div>
-                      <div class="button__projects">
-                        <button class="button__projects-text">смотреть проекты
-                          <img src="./images/catalog_build_popular/button_open.svg" alt="" class="button__projects-text_projects">
-                        </button>
-                        
-                        <div class="individual_build">
-                          <img src="./images/catalog_build_popular/choise_build.svg" alt="" class="advantage_build-choise">
-                          <p class="advantage_build-text">Индивидуальная планировка дома</p>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </td>
-                  <td class="catalog_build-hoyse">
-                    <div id="rectange_build" class="section_build">
-                      <img src="./images/catalog_build_popular/skandi_house.svg" class="">
-                      <h2 class="build_name5">“Атаман”</h2>
-    
-                      <table class="info_build">
-                        <tbody>
-                          <tr>
-                            <td class="info_build-txt">Площадь: <span class="info_build-txt-build">108 м</span></td>
-                            <td class="info_build-txt">Срок стройки: <span class="info_build-txt-build">16 дней</span></td>
-                          </tr>
-                          <tr>
-                            <td class="info_build-txt">Размеры: <span class="info_build-txt-build">7x9</span></td>
-                            <td class="info_build-txt">Комнат: <span class="info_build-txt-build">5</span></td>
-                          </tr>
-                        </tbody>
-                      </table>
-    
-                      <div class="overview_house-type">
-                        <img src="./images/icon/dot.svg" alt="" class="type_house">
-                        <p class="type_house-text">Тип дома:<span class="type_house-text-type">Каркасный</span></p>
-                      </div>
-    
-                      <div class="overview_house-price">
-                        <img src="./images/icon/dot.svg" alt="" class="price_house">
-                        <p class="price_house-text">Стоимость: 
-                          <span class="price_house-text-price">от
-                            <span class="price_house-text-green">1 780 000</span>
-                          руб</span></p>
-                      </div>
-                      <div class="button__projects">
-                        <button class="button__projects-text">смотреть проекты
-                          <img src="./images/catalog_build_popular/button_open.svg" alt="" class="button__projects-text_projects">
-                        </button>
-                        
-                        <div class="individual_build">
-                          <img src="./images/catalog_build_popular/choise_build.svg" alt="" class="advantage_build-choise">
-                          <p class="advantage_build-text">Индивидуальная планировка дома</p>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </td>
-                  <td class="catalog_build-hoyse">
-                    <div id="rectange_build" class="section_build">
-                      <img src="./images/catalog_build_popular/skandi_house.svg" class="">
-                      <h2 class="build_name6">“Атаман”</h2>
-    
-                      <table class="info_build">
-                        <tbody>
-                          <tr>
-                            <td class="info_build-txt">Площадь: <span class="info_build-txt-build">108 м</span></td>
-                            <td class="info_build-txt">Срок стройки: <span class="info_build-txt-build">16 дней</span></td>
-                          </tr>
-                          <tr>
-                            <td class="info_build-txt">Размеры: <span class="info_build-txt-build">7x9</span></td>
-                            <td class="info_build-txt">Комнат: <span class="info_build-txt-build">5</span></td>
-                          </tr>
-                        </tbody>
-                      </table>
-    
-                      <div class="overview_house-type">
-                        <img src="./images/icon/dot.svg" alt="" class="type_house">
-                        <p class="type_house-text">Тип дома:<span class="type_house-text-type">Каркасный</span></p>
-                      </div>
-    
-                      <div class="overview_house-price">
-                        <img src="./images/icon/dot.svg" alt="" class="price_house">
-                        <p class="price_house-text">Стоимость: 
-                          <span class="price_house-text-price">от
-                            <span class="price_house-text-green">1 780 000</span>
-                          руб</span></p>
-                      </div>
-                      <div class="button__projects">
-                        <button class="button__projects-text">смотреть проекты
-                          <img src="./images/catalog_build_popular/button_open.svg" alt="" class="button__projects-text_projects">
-                        </button>
-                        
-                        <div class="individual_build">
-                          <img src="./images/catalog_build_popular/choise_build.svg" alt="" class="advantage_build-choise">
-                          <p class="advantage_build-text">Индивидуальная планировка дома</p>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            
-              
-            </ul>
-        </div>
-
-        
-        </div>
-
-        <div class="section_project_approval">
-          <h2 class="section_project_approval-tittle">Ваш <span class="section_project_approval-tittle-approval">идеальный дом</span> всего за 6 этапов</h2>
-
-          <ul class="section_project_list">
-            <li>
-              <a class="section_project_link-check" href="">Этап 1</a>
-            </li>
-            <li>
-              <a class="section_project_link" href="">Этап 2</a>
-            </li>
-            <li>
-              <a class="section_project_link" href="">Этап 3</a>
-            </li>
-            <li>
-              <a class="section_project_link" href="">Этап 4</a>
-            </li>
-            <li>
-              <a class="section_project_link" href="">Этап 5</a>
-            </li>
-            <li>
-              <a class="section_project_link" href="">Этап 6</a>
-            </li>
-          </ul>
-
-          <div class="approval_info">
-            <img class="approval_people" src="./images/section_approval/approval_people.png" alt="">
-            <div class="approval_info-text">
-              <p class="approval_time">
-                <img src="./images/section_approval/time.png" alt="">
-                Время: <span class="approval_time-text">1 день</span></p>
-              <h2 class="approval_project_cottage">Согласование проекта <br>коттеджа</h2>
-              <h4 class="approval_project-text">
-                <img src="./images/section_approval/check.png" alt="">
-                <span class="approval_project-text-project">Выбор</span> объекта</h4>
-              <h4 class="approval_project-text">
-                <img src="./images/section_approval/check.png" alt="">
-                <span class="approval_project-text-project">Расчет</span> стоимости</h4>
-              <h4 class="approval_project-text">
-                <img src="./images/section_approval/check.png" alt="">
-                <span class="approval_project-text-project">Утверждение</span> планировки</h4>
-                <a class="first_state-info" href="">
-                  <img class="approval_info-icon" src="./images/section_approval/info.png" alt="">
-                  Первый этап <span class="first_state-info-text-info">помогает вам узнать <br>преимущества работы с нами</span><br>и ни к чему вас не обязывает</a>
-
-                  <div class="approval_exame_contract-info">
-                    <img class="logo_house_orng" src="./images/section_approval/logo_house.png" alt="">
-                    <img class="line1" src="./images/section_approval/line1.png" alt="">
-                    <img class="line2" src="./images/section_approval/line2.png" alt="">
-                    <img class="line1" src="./images/section_approval/line1.png" alt="">
-                    <p class="approval_exame_contract-info-text">Пример <br>договора</p>
-                    <button class="button_download">
-                      <img src="./images/section_approval/download.png" alt="">
-                    </button>
-                  
-                  </div>
-            </div>
-            
-            
-          </div>
-          
-        </div>
-
-        <div class="section__stock">
-          <h2 class="section__stock-text"><span class="section__stock-text-section">Акции и подарки</span> для каждой семьи</h2>
-
-          <div class="stock__card1">
-            <h3 class="card_tittle1">Любая перепланировка в подарок!</h3>
-            <p class="card__text"><strong>Рыбатекст</strong> используется дизайнерами, <strong>проектировщиками</strong> и фронтендерами, когда нужно выстро заполнить <strong>макеты</strong> или прототипы содержимым.</p>
-            <button class="card__button">перейти к акции</button>
-          </div>
-          <div class="stock__card2">
-            <h3 class="card_tittle2">Металлическая дверь в подарок!</h3>
-            <p class="card__text"><strong>Рыбатекст</strong> используется дизайнерами, <strong>проектировщиками</strong> и фронтендерами, когда нужно выстро заполнить <strong>макеты</strong> или прототипы содержимым.</p>
-            <button class="card__button">перейти к акции</button>
-            <div class="size__stock">
-              <h2>15<span class="size__stock-info">%</span></h2>
-              <p class="size__stock-info-text">скидка</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-viewing__houses">
-          <h2 class="viewing-hooses__text">Посмотрите
-            <span class="viewing-hooses__text__viewing">дома, построенные нами
-            за прошлый год</span>
-          </h2>
-          
-            <ul class="vieving-cards">
-              <li class="viewing-card__big">
-                  <button class="button__viewing">Срок строительства: 
-                  <span class="button__vieving_text">35 дней</span></button>
-              </li>
-              <li class="viewing-card__smoll">
-                <img src="./images/section_viewing/smoll_card.png" alt="smoll_card">
-              </li>
-              <li class="viewing-card__smoll_choise">
-                <img src="./images/section_viewing/loupe.svg" class="loupe" alt="loupe">
-              </li>
-              <li class="viewing-card__smoll">
-                <img src="./images/section_viewing/smoll_card.png" alt="smoll_card">
-              </li>
-              <li class="viewing-card__smoll">
-                <img src="./images/section_viewing/smoll_card.png" alt="smoll_card">
-              </li>
-            </ul>
-
-            <div class="viewing-houses-info">
-              <img src="./images/section_viewing/marker.png" alt="marker">
-              <a href="#" class="map__text">Показать на карте</a>
-
-              <h2 class="viewing-info-tittle">Дом из сруба “Атаман” в Пестово</h2>
-
-              <ul class="viewing-info">
-                <li class="viewing-info-text">
-                  <img class="viewing-info_dot" src="./images/section_viewing/dot.png" alt="dot">
-                  <h4 class="viewing-info__calculation">Стоимость строительства:</h4>
-                  <p class="viewing-info__calculation__text">
-                    <span class="viewing-info__calculation__text_calc">1 780 000</span> руб</p>
-                </li>
-                <li class="viewing-info-text">
-                  <img class="viewing-info_dot" src="./images/section_viewing/dot.png" alt="dot">
-                  <h4 class="viewing-info__calculation">Сроки строительства:</h4>
-                  <p class="viewing-info__calculation__text">
-                    <span class="viewing-info__calculation__text_calc">35</span> дней</p>
-                </li>
-                <li class="viewing-info-text">
-                  <img class="viewing-info_dot" src="./images/section_viewing/dot.png" alt="dot">
-                  <h4 class="viewing-info__calculation">Общая площадь:</h4>
-                  <p class="viewing-info__calculation__text">
-                    <span class="viewing-info__calculation__text_calc">120</span> м.кв.</p>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-
-        </div>
-
-  
-      </section>
-    </div>
-
-
-  </main>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+    </footer>
+  </body>
 </html>
